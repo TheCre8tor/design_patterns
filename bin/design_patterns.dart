@@ -1,4 +1,5 @@
 import 'package:design_patterns/design_patterns.dart';
+import 'package:design_patterns/oop_principles/abstraction.dart';
 
 void main(List<String> arguments) {
   var account = Account();
@@ -8,4 +9,8 @@ void main(List<String> arguments) {
   double balance = account.balance;
 
   print(balance);
+
+  // Abstraction ->
+  var mailService = MailService();
+  mailService.sendEmail("dummy.email@gmail.com");
 }

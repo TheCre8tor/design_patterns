@@ -1,17 +1,17 @@
-/* Abstraction reduce complexity by hiding 
-   unnecessary details in our classes. */
-
 class MailService {
+  //! Abstraction reduce complexity by hiding
+  //! unnecessary details in our classes.
+
   void sendEmail(String email) {
-    _connect();
+    _connect(timeout: 10);
     _authenticate();
-    // Send email ->
+    // send();
     _disconnect();
   }
 
-  //! This are implementation details which
-  //! are not needed by the user.
-  void _connect() => print("Connected...");
+  //! This are implementation details that's
+  //! not needed by the consumer of the class.
+  void _connect({required int timeout}) => print("Connected...");
   void _disconnect() => print("Disconnected...");
   void _authenticate() => print("Authenticated");
 }
