@@ -1,5 +1,7 @@
-import 'package:design_patterns/design_patterns.dart' as design_patterns;
+import 'package:design_patterns/design_patterns.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${design_patterns.calculate()}!');
+  User user = User(name: "Alexander");
+
+  user.sayHello();
 }
