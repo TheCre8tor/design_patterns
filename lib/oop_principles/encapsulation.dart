@@ -1,9 +1,9 @@
 class Account {
-  // Encapsulation Principle ->
-  //! Encapsulation is about bundling the data
+  //? Encapsulation Principle ->
+  //! Encapsulation is about bundling the fields
   //! and methods that operate on the data within
   //! a class and hiding the values or state of
-  //! an object inside the class
+  //! an object inside the class.
 
   double _balance = 0;
 
